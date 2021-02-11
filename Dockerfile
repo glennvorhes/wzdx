@@ -9,7 +9,7 @@ RUN pip install -r requirements.txt
 #RUN apt update
 #RUN apt install gdal-bin python3-gdal -y
 
-EXPOSE 5000
+EXPOSE 8085
 
 
 CMD python app.py
