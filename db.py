@@ -1,5 +1,4 @@
 import cx_Oracle
-from cx_Oracle import Cursor
 import warnings
 from sqlalchemy import create_engine
 import sqlalchemy

@@ -1,5 +1,5 @@
 from flask import Flask, render_template, url_for
-from db import get_oracle_connection, get_oracle_engine, get_oracle_session
+from db import get_oracle_session
 from flask import jsonify
 import models as m
 import json
