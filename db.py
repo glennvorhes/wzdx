@@ -15,8 +15,6 @@ _oracle_connections = {
     }
 }
 
-
-
 def get_oracle_connection(sid: str = 'transdb2') -> cx_Oracle.Connection:
     """
     Get a cx_Oracle connection
@@ -45,4 +43,5 @@ def get_oracle_connection(sid: str = 'transdb2') -> cx_Oracle.Connection:
     except cx_Oracle.DatabaseError as ex:
         warnings.warn("Oracle database not available: [{0}".format(type(ex)))
         print(ex.args[0])
+        print(ex)
         return None
