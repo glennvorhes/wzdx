@@ -1,4 +1,7 @@
 from flask import Flask
+from db import get_oracle_connection
+
+
 
 app = Flask(__name__)
 
@@ -9,4 +12,8 @@ def hello_world():
 
 
 if __name__ == '__main__':
+    get_oracle_connection()
+
     app.run(host='0.0.0.0', port=8085)
+
+
